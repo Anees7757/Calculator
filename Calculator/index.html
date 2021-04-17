@@ -1,0 +1,55 @@
+<html> 
+<head>
+	<title>Calculator</title>
+	<script src="include\javascript\index.js"></script>
+	<link rel="stylesheet" type="text/css" href="include\stylesheets\index.css">
+</head>
+<body onload="myFunction()" style="margin:0;">
+	<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<center>
+	<div id="title"><span style="color: black">Cal-</span>Culator<br><span style="font-size: 20px">A simple Calculator</span></div> 
+	<hr style="height: 1px; box-shadow: 0px 0px 0px 2px black">
+	<br>
+	<table> 
+		<tr> 
+			<td colspan="5"><input type="text" placeholder="0" id="result"/></td>
+		</tr> 
+		<tr>
+			<td><input type="button" value="7" onclick="dis('7')"/> </td> 
+			<td><input type="button" value="8" onclick="dis('8')"/> </td> 
+			<td><input type="button" value="9" onclick="dis('9')"/> </td>
+			<td><input type="button" value="/" id="same" onclick="dis('/')"/> </td>
+			<td><input type="button" value="C" id="same" onclick="clr()"/> </td>
+
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4" onclick="dis('4')"/> </td> 
+			<td><input type="button" value="5" onclick="dis('5')"/> </td> 
+			<td><input type="button" value="6" onclick="dis('6')"/> </td> 
+			<td><input type="button" value="*" id="same" onclick="dis('*')"/> </td>
+			<td rowspan="3"><input type="button" value="=" id="equal"onclick="solve()"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="1" onclick="dis('1')"/> </td> 
+			<td><input type="button" value="2" onclick="dis('2')"/> </td> 
+			<td><input type="button" value="3" onclick="dis('3')"/> </td> 
+			<td><input type="button" value="-" id="same" onclick="dis('-')"/> </td>
+		</tr> 
+		<tr> 
+			<td colspan="2"><input type="button" id="zero" value="0" onclick="dis('0')"/> </td> 
+			<td><input type="button" value="." id="same"onclick="dis('.')"/> </td>  
+			<td><input type="button" value="+" id="same" onclick="dis('+')"/> </td>
+		</tr> 
+	</table>
+	
+</center>
+</body>
+<br>
+<footer>
+	<span>If you like the Calculator, Leave an <a id="name" href="mailto:anees7757@gmail.com" target="blank"><b>Email</b></a></span><br>
+	</br>
+	<span>©2021 Copyright | Designed by <a id="name" href="https://www.facebook.com/MuhammadAnees.85" target="blank"><b>Muhammad Anees</b></a><br>All rights reserved</span>
+</footer>
+</html>
